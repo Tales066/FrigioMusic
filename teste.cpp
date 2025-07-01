@@ -205,8 +205,8 @@ void menuUsuario() {
             case 3:
                 cout << "\033[2J\033[H";
                 u.mostrarPerfil();
-                this_thread::sleep_for(chrono::seconds(3));
-                cout << "\033[2J\033[H";
+                cout << "\nPressione Enter para voltar ao menu...";
+                cin.ignore();
                 break;
 
             case 4: {
@@ -264,6 +264,7 @@ void menuUsuario() {
 
     } while (opcao != 6);
 }
+
 
 int main() {
     string purple = "\033[1;35m";
