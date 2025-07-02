@@ -178,6 +178,7 @@ void menuUsuario() {
         cout << "║ \033[1;32m4\033[1;34m - Adicionar à Watchlist                    ║\n";
         cout << "║ \033[1;32m5\033[1;34m - Marcar álbum da Watchlist como avaliado  ║\n";
         cout << "║ \033[1;32m6\033[1;34m - Sair                                     ║\n";
+        cout << "║ \033[1;32m7\033[1;34m - Remover álbum dos favoritos              ║\n";
         cout << "╚══════════════════════════════════════════════╝\033[0m\n";
         cout << "Escolha: ";
         cin >> opcao;
@@ -257,6 +258,34 @@ void menuUsuario() {
             case 6:
                 cout << "👋 Até mais!\n";
                 break;
+
+            case 7: {
+                if (u.albuns.empty()) {
+                    cout << "Você não tem álbuns avaliados para remover.\n";
+                    break;
+                }
+
+                cout << "Seus álbuns avaliados:\n";
+                for (size_t i = 0; i < u.albuns.size(); ++i) {
+                    cout << i + 1 << " - " << u.albuns[i].titulo << " (" << u.albuns[i].nota << ")\n";
+                }
+
+                cout << "Digite o número do álbum que deseja remover (0 para cancelar): ";
+                int remover;
+                cin >> remover;
+                cin.ignore();
+
+                if (remover > 0 && static_cast<size_t>(remover) <= u.albuns.size()) {
+                    cout << "Álbum '" << u.albuns[remover - 1].titulo << "' removido dos favoritos.\n";
+                    u.albuns.erase(u.albuns.begin() + (remover - 1));
+                    salvarPerfil(u);
+                } else if (remover == 0) {
+                    cout << "Operação cancelada.\n";
+                } else {
+                    cout << "Escolha inválida.\n";
+                }
+                break;
+            }
 
             default:
                 cout << "Opção inválida.\n";
