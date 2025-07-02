@@ -1,6 +1,6 @@
-# 🎶 Letterboxd Musical 🎶
+# 🎶 Frigio Music 🎶
 
-Bem-vindo ao **Letterboxd Musical**, um sistema de terminal inspirado no Letterboxd, mas voltado para organizar seus álbuns musicais favoritos! <br>
+Bem-vindo ao **Frigio Music**, um sistema de terminal inspirado no Letterboxd, mas voltado para organizar seus álbuns musicais favoritos! <br>
 Obs: Esse projeto foi inspirado para o projeto da matéria de Linguagem de programação |. 
 
 Aqui você pode:
