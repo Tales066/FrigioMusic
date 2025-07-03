@@ -33,8 +33,8 @@ Compatível com sistemas **Linux**, **MacOS**, ou **Windows com suporte a ANSI E
 
 1. Para rodar:
    ```bash
-   g++ main.cpp -o letterboxd
-   ./letterboxd
+   g++ main.cpp -o frigiomusic
+   ./frigiomusic
 
 
 2. Clone o repositório:
