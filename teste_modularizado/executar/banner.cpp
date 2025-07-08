@@ -16,21 +16,30 @@ void printLineWithStars(bool stars[]) {
     std::cout << "*" << std::endl;
 }
 
+/*
+Aqui temos o método que imprime o banner com o texto centralizado e bordas com estrelas.
+
+O parâmetro 'comEstrela' indica se o texto deve terminar com um asterisco e o parâmetro 'borderStars' é um array de booleanos que indica onde as estrelas devem ser impressas na borda do banner.
+O texto é centralizado dentro de uma largura fixa de 65 caracteres, e o restante do espaço é preenchido com espaços em branco e é impresso em azul claro (cor 1;36) e o banner é encerrado com reset de cor (código 0).
+A função imprime o banner completo, incluindo as bordas, o texto centralizado, e as linhas de estrelas acima e abaixo do texto. Ela também imprime o título do aplicativo em ASCII art.
+A função é chamada no início do programa para exibir o banner de boas-vindas e pode ser usada em outras partes do programa para exibir banners personalizados. E a mesma não retorna nenhum valor, pois imprime diretamente no console.  
+*/
+
 void printBanner(const std::string& texto, bool comEstrela, bool borderStars[]) {
     std::cout << "\033[1;36m";
 
     std::cout << "     ***********************************************************************" << std::endl;
     printLineWithStars(borderStars);
 
-    std::cout << "     *  ______        _         _                                 _        *" << std::endl;
-    std::cout << "     * |  ____|      (_)       (_)                               (_)       *" << std::endl;
-    std::cout << "     * | |__    _ __  _   __ _  _   ___    _ __ ___   _   _  ___  _   ___  *" << std::endl;
-    std::cout << "     * |  __|  | '__|| | / _` || | / _ \\  | '_ ` _ \\ | | | |/ __|| | / __| *" << std::endl;
-    std::cout << "     * | |     | |   | || (_| || || (_) | | | | | | || |_| |\\__ \\| || (__  *" << std::endl;
-    std::cout << "     * |_|     |_|   |_| \\__, ||_| \\___/  |_| |_| |_| \\__,_||___/|_| \\___| *" << std::endl;
-    std::cout << "     *                   __/ |                                            *" << std::endl;
-    std::cout << "     *                  |___/                                             *" << std::endl;
-    std::cout << "     *                                                                     *" << std::endl;
+    std::cout << "        ______        _         _                                 _            " << std::endl;
+    std::cout << "       |  ____|      (_)       (_)                               (_)           " << std::endl;
+    std::cout << "       | |__    _ __  _   __ _  _   ___    _ __ ___   _   _  ___  _   ___      " << std::endl;
+    std::cout << "       |  __|  | '__|| | / _` || | / _ \\  | '_ ` _ \\ | | | |/ __|| | / __|   " << std::endl;
+    std::cout << "       | |     | |   | || (_| || || (_) | | | | | | || |_| |\\__ \\| || (__    " << std::endl;
+    std::cout << "       |_|     |_|   |_| \\__, ||_| \\___/  |_| |_| |_| \\__,_||___/|_| \\___| " << std::endl;
+    std::cout << "                         __/ |                                                 " << std::endl;
+    std::cout << "                        |___/                                                  " << std::endl;
+    std::cout << "                                                                               " << std::endl;
 
     int larguraUtil = 65;
     int espacosAntes = (larguraUtil - (int)texto.size()) / 2;

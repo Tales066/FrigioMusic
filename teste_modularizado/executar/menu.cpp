@@ -6,13 +6,13 @@
 using namespace std;
 
 void showMenu(int selected) {
-    const int largura = 44;
+    const int largura = 44; // Largura entre as bordas
     string options[] = {
-        "Criar/Editar Perfil",
-        "Adicionar Álbum",
-        "Remover Álbum",
-        "Ver Perfil e Álbuns",
-        "Adicionar à Watchlist",
+        "Criar Perfil",
+        "Adicionar Album",
+        "Remover Album",
+        "Ver Perfil e Albuns",
+        "Adicionar a Watchlist",
         "Alterar Cores",
         "Sair"
     };
@@ -20,23 +20,31 @@ void showMenu(int selected) {
 
     limparTela();
     cout << corMenu;
-    cout << "╔════════════════════════════════════════════╗\n";
-    cout << "║              MENU DO PERFIL                 ║\n";
-    cout << "╠════════════════════════════════════════════╣\n";
+    cout << "╔═══════════════════════════════════════════╗\n";
+    cout << "║              MENU DO PERFIL               ║\n";
+    cout << "╠═══════════════════════════════════════════╣\n";
 
     for (int i = 0; i < n; ++i) {
-        cout << "║ ";
+        cout << "║";
+        
         if (i == selected) {
-            cout << "\033[1;36m> [ " << options[i];
-            cout << string(largura - 6 - options[i].size(), ' ') << " ]\033[0m" << corMenu;
+            string texto = "> [ " + options[i] + " ]";
+            int espacos = largura - texto.size();
+            int espacosEsq = (espacos - 1) / 2;
+            int espacosDir = espacos / 2;
+            cout << "\033[1;30m" << string(espacosEsq, ' ') << texto << string(espacosDir, ' ') << "\033[0m" << corMenu;
         } else {
-            cout << "  " << options[i] << string(largura - 4 - options[i].size(), ' ');
+            string texto = options[i];
+            int espacos = largura - texto.size();
+            int espacosEsq = (espacos - 1) / 2;
+            int espacosDir = espacos / 2;
+            cout << string(espacosEsq, ' ') << texto << string(espacosDir, ' ');
         }
+        
         cout << "║\n";
     }
-
-    cout << "╚════════════════════════════════════════════╝\n" << reset;
-    cout << "Use ↑/↓ para navegar e ENTER para selecionar.\n";
+    cout << "╚═══════════════════════════════════════════╝\n";
+    cout << "\033[0m"; // Resetar cores
 }
 
 void menuUsuario() {

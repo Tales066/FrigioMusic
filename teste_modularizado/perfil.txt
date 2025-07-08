@@ -1,12 +1,4 @@
-Tales Cardoso
-3
-iron
-5
-rano
-3
-whi
-2
-3
+Tales
+0
+1
 vivi
-low
-link

@@ -15,9 +15,10 @@ void Usuario::mostrarPerfil() const {
     std::cout << "╗\n";
 
     // Título centralizado
-    std::cout << "║" << std::string((largura - 17) / 2, ' ') << "PERFIL DO USUÁRIO"
+    std::cout << "║" << std::string((largura - 17) / 2, ' ') << "PERFIL DO USUARIO"
               << std::string(largura - 17 - (largura - 17) / 2, ' ') << "║\n";
 
+              
     // Linha separadora
     std::cout << "╠";
     for (int i = 0; i < largura; ++i)
@@ -35,9 +36,9 @@ void Usuario::mostrarPerfil() const {
     std::cout << "╣\n";
 
     if (albuns.empty()) {
-        std::cout << "║ Nenhum álbum avaliado." << std::string(largura - 23, ' ') << "║\n";
+        std::cout << "║ Nenhum album avaliado." << std::string(largura - 23, ' ') << "║\n";
     } else {
-        std::cout << "║ Meus álbuns avaliados:" << std::string(largura - 22, ' ') << "║\n";
+        std::cout << "║ Meus albuns avaliados:" << std::string(largura - 22, ' ') << "║\n";
         listarAlbunsPorLinhaDentroDoQuadro(3, largura);
     }
 

@@ -10,7 +10,7 @@
 int main() {
     srand(time(nullptr));
     bool borderStars[71 - 4] = {false};
-    std::string textoCompleto = "Bem-vindo";
+    std::string textoCompleto = "O seu app de musica";
 
     for (size_t i = 1; i <= textoCompleto.size(); i++) {
         limparTela();
@@ -39,7 +39,7 @@ int main() {
         std::this_thread::sleep_for(std::chrono::milliseconds(150));
     }
 
-    // Entra no menu após animação
+    // Após o banner, ele chama o menu do usuário. 
     menuUsuario();
 
     return 0;
