@@ -1,14 +1,13 @@
 # 🎶 Frigio Music 🎶
 
 Bem-vindo ao **Frigio Music**, um sistema de terminal inspirado no Letterboxd, mas voltado para organizar seus álbuns musicais favoritos! <br>
-Obs: Esse projeto foi inspirado para o projeto da matéria de Linguagem de programação |. 
+Obs: Esse projeto foi criado para a atividade final da matéria de Linguagem de programação |. 
 
-Aqui você pode:
+No Frigio você pode: 
 
 ✅ Criar seu perfil  
 ✅ Adicionar e avaliar álbuns musicais  
-✅ Criar uma Watchlist de álbuns para ouvir depois  
-✅ Marcar álbuns da Watchlist como avaliados  
+✅ Adicionar uma Watchlist de álbuns que você irá ouvir depois   
 ✅ Remover álbuns dos favoritos (avaliados) 
 
 ---
