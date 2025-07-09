@@ -1,0 +1,22 @@
+# --- Visual Studio (qualquer nível) ---
+**/.vs/
+**/*.suo
+**/*.VC.db
+**/*.opendb
+**/*.ipch
+
+# --- Build ---
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/*.obj
+**/*.pdb
+**/*.ilk
+**/*.tlog
+
+# --- Executáveis / libs ---
+**/*.exe
+**/*.dll
+**/*.lib
+**/*.exp

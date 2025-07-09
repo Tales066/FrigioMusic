@@ -6,9 +6,8 @@ class Album
 	std::string titulo;
 	Autor autor;
 	int anoLancamento;
-	double nota;
-	public: Album() {}
-	
+	double nota{0.0};
+		
 	public: Album(std::string titulo, Autor autor, int anoLancamento);
 	public: Album(std::string titulo, Autor autor, int anoLancamento, double nota);
 		  //getters

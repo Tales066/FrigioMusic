@@ -110,7 +110,7 @@ void Usuario::listarWatchlistPorLinhaDentroDoQuadro(int porLinha, int largura) c
     }
 }
 
-void salvarPerfil(const Usuario& u) {
+void salvarPerfil(const Perfil& u) {
     std::ofstream out("perfil.txt");
     if (out.is_open()) {
         out << u.nome << "\n" << u.albuns.size() << "\n";
@@ -120,7 +120,7 @@ void salvarPerfil(const Usuario& u) {
     }
 }
 
-bool carregarPerfil(Usuario& u) {
+bool carregarPerfil(Perfil& u) {
     std::ifstream in("perfil.txt");
     if (in.is_open()) {
         std::getline(in, u.nome);

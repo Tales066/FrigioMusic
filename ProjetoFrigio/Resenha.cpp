@@ -3,6 +3,7 @@
 	{
 		resenha = c;
 		MarcarComoOuvido();
+		return c;
 
 	}
 	void Resenha::MarcarComoOuvido()

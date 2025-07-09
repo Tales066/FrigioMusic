@@ -1,20 +1,29 @@
 #pragma once
 #include <string>
-#include <vector>
-#include "Favoritos.h"
-#include "Resenha.h"
 #include "AlbunsOuvidos.h"
 #include "FilaDeInteresses.h"
+#include "Favoritos.h"
+#include "Resenha.h"
+
 class Perfil
 {
-	std::string nome;
-	Favoritos favs;
-	std::vector<Resenha> resenhas;
-	FilaDeInteresses filaDeInteresses;
-	AlbunsOuvidos albunsOuvidos;
+    private:
+    std::string     nome;
+    Favoritos       favs;
+    std::vector<Resenha> resenhas;
+    FilaDeInteresses filaDeInteresses;
+    AlbunsOuvidos    albunsOuvidos;
 
+    public:
+        // acesso controlado
+    void               SetNome(std::string n) { nome = std::move(n); }
+    const std::string& GetNome() const noexcept { return nome; }
 
-	public: void MostrarPerfil()const{}
+    AlbunsOuvidos& Albuns()       noexcept { return albunsOuvidos; }
+    const AlbunsOuvidos& Albuns() const noexcept { return albunsOuvidos; }
 
+    FilaDeInteresses& Watchlist()       noexcept { return filaDeInteresses; }
+    const FilaDeInteresses& Watchlist() const noexcept { return filaDeInteresses; }
+
+    void MostrarPerfil() const;
 };
-

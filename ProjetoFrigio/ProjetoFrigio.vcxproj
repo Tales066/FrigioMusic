@@ -102,6 +102,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8
+ %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,25 +128,32 @@
     <ClCompile Include="Album.cpp" />
     <ClCompile Include="AlbunsOuvidos.cpp" />
     <ClCompile Include="Autor.cpp" />
-    <ClCompile Include="CorDaLinha.cpp" />
+    <ClCompile Include="Banner.cpp" />
+    <ClCompile Include="Cores.cpp" />
     <ClCompile Include="Estrelas.cpp" />
-    <ClCompile Include="ExibirCapaASCII.cpp" />
     <ClCompile Include="Favoritos.cpp" />
     <ClCompile Include="FilaDeInteresses.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Perfil.cpp" />
+    <ClCompile Include="Plataforma.cpp" />
     <ClCompile Include="ProjetoFrigio.cpp" />
     <ClCompile Include="Resenha.cpp" />
+    <ClCompile Include="ServicosPerfil.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Album.h" />
     <ClInclude Include="AlbunsOuvidos.h" />
     <ClInclude Include="Autor.h" />
-    <ClInclude Include="CorDaLinha.h" />
+    <ClInclude Include="Banner.h" />
+    <ClInclude Include="Cores.h" />
     <ClInclude Include="Estrelas.h" />
     <ClInclude Include="Favoritos.h" />
     <ClInclude Include="FilaDeInteresses.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Perfil.h" />
+    <ClInclude Include="Plataforma.h" />
     <ClInclude Include="Resenha.h" />
+    <ClInclude Include="ServicosPerfil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

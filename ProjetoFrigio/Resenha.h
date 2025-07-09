@@ -2,7 +2,7 @@
 #include <string>
 #include "Album.h"
 #include "Estrelas.h"
-using namespace std;
+
 
 class Resenha
 {
@@ -13,9 +13,9 @@ class Resenha
     bool favorito = false;
 
 
-	public: std::string CriarResenha(std::string c) {}
-	public: void MarcarComoOuvido() {}
-	public:	void Remover(){}
+	public: std::string CriarResenha(std::string c);
+	public: void MarcarComoOuvido();
+	public:	void Remover();
 	
 
 };
