@@ -5,7 +5,6 @@
 
 class Banner
 {
-    public:
-        static void printLineWithStars(bool stars[]);
-        static void printBanner(const std::string& texto, bool comEstrela, bool borderStars[]);
+public:
+    static void printBannerAnimado(); // <- nova função animada
 };
