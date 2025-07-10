@@ -20,7 +20,7 @@ int main()
         limparTela();
         for(bool& b : borderStars) b = (std::rand() % 10) < 3;
         Banner::printBanner(textoCompleto.substr(0, i), false, borderStars);
-        std::this_thread::sleep_for(std::chrono::milliseconds(150));
+        std::this_thread::sleep_for(std::chrono::milliseconds(80));
     }
 
     // piscando
