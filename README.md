@@ -6,15 +6,59 @@ Obs: Esse projeto foi criado para a atividade final da matéria de Linguagem de 
 No Frigio você pode: 
 
 ✅ Criar seu perfil  
+✅ Escolher um Avatar  
 ✅ Adicionar e avaliar álbuns musicais  
-✅ Adicionar uma Watchlist de álbuns que você irá ouvir depois   
-✅ Remover álbuns dos favoritos (avaliados) 
+✅ Adicionar uma Watchlist de álbuns que você irá ouvir depois  
+✅ Remover álbuns (Avaliados e Watchlist)  
+✅ Alterar as cores do seu perfil e Menu.  
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-
+```plaintext
+FrigioMusic/
+├── Executar/               
+│   ├── Album.cpp
+│   ├── AlbunsOuvidos.cpp
+│   ├── Animacao.cpp
+│   ├── Autor.cpp
+│   ├── Banner.cpp
+│   ├── Cores.cpp
+│   ├── Estrela.cpp
+│   ├── Favoritos.cpp
+│   ├── FilaDeInteresse.cpp
+│   ├── Menu.cpp
+│   ├── Perfil.cpp
+│   ├── Plataforma.cpp
+│   ├── ProjetoFrigio.cpp    # Arquivo principal com main()
+│   ├── Resenha.cpp 
+│   └── ServicosPerfil.cpp
+│
+├── src/                    # Arquivos de cabeçalho (.h)
+│   ├── Album.h
+│   ├── AlbunsOuvidos.h
+│   ├── Animacao.h
+│   ├── Autor.h
+│   ├── Banner.h
+│   ├── Cores.h
+│   ├── Estrela.h
+│   ├── ExibirCapas.h
+│   ├── Favoritos.h
+│   ├── FilaDeInteresse.h
+│   ├── Menu.h
+│   ├── Perfil.h
+│   ├── Plataforma.h
+│   ├── Resenha.h
+│   └── ServicosPerfil.h
+│
+├── build/                  # Objetos compilados (.o)
+│   ├── Album.o
+│   └── ...
+│
+├── Makefile                # Script de compilação 
+└── FrigioMusic             # Executável final gerado
+```
 ---
 
 ## 🛠️ Tecnologias Utilizadas
