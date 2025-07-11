@@ -82,8 +82,8 @@ Compatível com sistemas **Linux**, **MacOS**, ou **Windows com suporte a ANSI E
 
 2. Clone o repositório:
 ```bash
-git clone https://github.com/Tales066/letterboxd-musical.git
-cd letterboxd-musical
+git clone https://github.com/Tales066/FrigioMusic.git
+cd FrigioMusic
 
 
 
