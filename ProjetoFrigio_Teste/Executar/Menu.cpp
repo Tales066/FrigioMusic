@@ -24,36 +24,24 @@ void Menu::showMenu(size_t selected)
 
     limparTela();
     cout << corMenu;
-    cout << "╔═══════════════════════════════════════════╗\n";
-    cout << "║              MENU DO PERFIL               ║\n";
-    cout << "╠═══════════════════════════════════════════╣\n";
+    cout << "\n✧･ﾟ: *✧･ﾟ:* MENU *:･ﾟ✧*:･ﾟ✧\n\n";
 
     for(size_t i = 0; i < n; ++i)
     {
-        cout << "║";
-
         if(i == selected)
         {
-            string texto = "> [ " + options[i] + " ]";
-            size_t espacos = largura - texto.size();
-            size_t espacosEsq = (espacos - 1) / 2;
-            size_t espacosDir = espacos / 2;
-            cout << "\033[1;30m" << string(espacosEsq, ' ') << texto << string(espacosDir, ' ') << "\033[0m" << corMenu;
+            cout << "\033[1;30m▸ " << options[i] << "\033[0m\n";
         }
         else
         {
-            string texto = options[i];
-            size_t espacos = largura - texto.size();
-            size_t espacosEsq = (espacos - 1) / 2;
-            size_t espacosDir = espacos / 2;
-            cout << string(espacosEsq, ' ') << texto << string(espacosDir, ' ');
+            cout << "  " << options[i] << "\n";
         }
-
-        cout << "║\n";
     }
-    cout << "╚═══════════════════════════════════════════╝\n";
+
+    cout << "\n⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆\n";
     cout << "\033[0m"; // Resetar cores
 }
+
 
 void Menu::menuUsuario()
 {
@@ -301,7 +289,7 @@ void Menu::menuUsuario()
                 alterarCores();
                 break;
             case 6:
-                mostrarAnimacaoAranha();
+                mostrarAnimacao();
                 sair = true;
                 break;  
             }

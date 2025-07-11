@@ -12,10 +12,11 @@ int main()
     std::srand(static_cast<unsigned>(std::time(nullptr)));
 
     limparTela();
-    Banner::printBannerAnimado(); // Chama a versão animada
+    Banner::printBannerAnimado();
 
-    std::this_thread::sleep_for(std::chrono::seconds(1)); // Pausa opcional
+    std::this_thread::sleep_for(std::chrono::seconds(2));
 
+    limparTela(); // limpa antes do menu
     Menu m;
     m.menuUsuario();
 
